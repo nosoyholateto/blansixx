@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Usuarios - BLANSIXX</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .admin-table th, .admin-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .admin-table th {
+            background-color: #007aff;
+            color: white;
+        }
+
+        .admin-table td {
+            background-color: #fafafa;
+        }
+
+        .admin-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .button {
+            background-color: #007aff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #005fcc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2>Administración de Usuarios</h2>
+        </div>
+
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>juan@example.com</td>
+                    <td>Admin</td>
+                    <td><button class="button">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Ana Gómez</td>
+                    <td>ana@example.com</td>
+                    <td>Usuario</td>
+                    <td><button class="button">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Pedro Sánchez</td>
+                    <td>pedro@example.com</td>
+                    <td>Usuario</td>
+                    <td><button class="button">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <a href="admin-dashboard.html" class="button">Volver al Panel</a>
+        </footer>
+    </div>
+
+</body>
+</html>
