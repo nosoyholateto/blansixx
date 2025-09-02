@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Productos - BLANSIXX</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-admin-container {
+            padding: 40px;
+        }
+
+        .product-header {
+            background: #007aff;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .product-header h2 {
+            margin: 0;
+        }
+
+        .product-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .product-form input {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .product-form button {
+            background-color: #007aff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .product-form button:hover {
+            background-color: #005fcc;
+        }
+
+        .product-list {
+            margin-top: 40px;
+        }
+
+        .product-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-item button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .product-item button:hover {
+            background-color: #e60000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-admin-container">
+        <div class="product-header">
+            <h2>Administración de Productos</h2>
+        </div>
+
+        <form class="product-form">
+            <input type="text" id="productName" placeholder="Nombre del producto" required>
+            <input type="number" id="productPrice" placeholder="Precio del producto" required>
+            <input type="file" id="productImage" placeholder="Imagen del producto" required>
+            <button type="submit">Añadir Producto</button>
+        </form>
+
+        <div class="product-list">
+            <div class="product-item">
+                <span>Producto 1</span>
+                <button>Eliminar</button>
+            </div>
+            <div class="product-item">
+                <span>Producto 2</span>
+                <button>Eliminar</button>
+            </div>
+            <div class="product-item">
+                <span>Producto 3</span>
+                <button>Eliminar</button>
+            </div>
+        </div>
+
+        <footer>
+            <a href="admin-dashboard.html" class="button">Volver al Panel</a>
+        </footer>
+    </div>
+
+</body>
+</html>
